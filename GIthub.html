@@ -55,12 +55,37 @@
         // git push -u origin master
 
 
-
         // 之后的推送
         // git push
 
 
 
+
+        // SSH Key配置
+        // id_rsa        私钥文件, 存放客户端的电脑中
+        // id_rsa.pub    公钥文件, 配置到Github中
+
+        // 运行如下命令, 敲击回车三次, 即可在.ssh文件中生成 id_rsa id_rsa.pub 文件
+        // ssh-keygen -t rsa -b 4096 -C "2665412745@qq.com"
+
+
+        // 配置SSH key
+        // 记事本打开本地 id_rsa.pub, 复制内容
+        // 登录到Github, Setting  >   SSH and GPG Keys   >   New SSH key
+        // 将复制的内容粘贴到Key对应文本框中
+        // Title填写一个名称, 标识Key从何而来
+
+
+        // 检测SSH key是否配置成功
+        // ssh -T git@github.com
+
+
+        // 基于SSH将本地仓库上传
+        // 复制粘贴
+
+
+        // 将远程仓库克隆到本地
+        // git clone 远程仓库地址
 
 
 
